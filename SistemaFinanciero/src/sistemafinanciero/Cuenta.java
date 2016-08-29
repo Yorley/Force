@@ -14,6 +14,7 @@ public abstract class Cuenta {
     private TipoMoneda moneda;
     private double saldo;
     private Estado estado;
+    private TipoTransaccion modoTransaccion;
 
     /**
      * Default constructor
@@ -114,6 +115,15 @@ public abstract class Cuenta {
     public Estado getEstado() {
         return estado;
     }
+
+    public TipoTransaccion getModoTransaccion() {
+        return modoTransaccion;
+    }
+
+    public void setModoTransaccion(TipoTransaccion modoTransaccion) {
+        this.modoTransaccion = modoTransaccion;
+    }
+    
     
 
 }
